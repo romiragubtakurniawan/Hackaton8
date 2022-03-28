@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+}
+
+body {
+  margin: 0;
+  background-image: url("royalty-free-music-Background.jpg");
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 60px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.header-left {
+  float: left;
+}
+
+.header-left button {
+  position: relative;
+  float: left;
+  background-color: rgba(34, 49, 52, 0);
+  border: none;
+  margin-left: 30px;
+}
+
+.header-right {
+  float: right;
+  margin-right: 10px;
+}
+.header-right button {
+  text-decoration: none;
+  line-height: 65px;
+  padding: 0 25px;
+  background-color: rgba(43, 41, 41, 0.1);
+  float: left;
+  transition: all 0.5s;
+  font-size: 20px;
+  border: none;
+  display: block;
+}
+.out button {
+  text-decoration: none;
+  line-height: 65px;
+  padding: 0 25px;
+  background-color: rgba(43, 41, 41, 0);
+  float: right;
+  transition: all 0.5s;
+  font-size: 20px;
+  border: none;
+  display: none;
+}
+
+.header-right button:hover {
+  color: aqua;
+}
+.out button:hover {
+  color: aqua;
+}
+.container {
+  width: 100%;
+  background-color: rgba(43, 41, 41, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  background-size: cover;
+  color: gold;
+  text-align: center;
+  margin-top: 35vh;
+  display: none;
+}
+.opening {
+  width: 100%;
+  background-color: rgba(43, 41, 41, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  justify-content: center;
+  background-size: cover;
+  color: gold;
+  text-align: center;
+  margin-top: 35vh;
+  display: block;
+}
+.opening p {
+  font-size: 40px;
+}
+.opening h1 {
+  font-size: 80px;
+}
+.container p {
+  font-size: 45px;
+}
+
+.btn-group button {
+  padding: 10px 60px;
+}
+.btn-group button:hover {
+  background-color: aqua;
+}
+.dropdown-menu li {
+  padding-right: 120px;
+  text-align: center;
+}
+.dropdown-item {
+  margin-left: 70px;
+}
+
+.singup {
+  width: 40%;
+  background-color: rgba(43, 41, 41, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  color: gold;
+  text-align: center;
+  margin: 30vh 0 0 578px;
+  display: none;
+}
+
+.login1 {
+  width: 40%;
+  background-color: rgba(43, 41, 41, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  color: gold;
+  text-align: center;
+  margin: 35vh 0px 0 578px;
+  display: none;
+}
+input {
+  border-radius: 5px;
+  padding: 5px;
+  width: 500px;
+  text-align: center;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  margin: 15px 0 0 0;
+}
+
+#submit-button {
+  border: none;
+  padding: 15px 40px;
+  background-color: #bbff00;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px #030303;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#submit-button:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 50px;
+    margin-top: 40vh;
+  }
+  .top-wrapper h1 {
+    font-size: 40px;
+    width: 20px;
+    height: 50px;
+  }
+  .singup {
+    width: 70%;
+  }
+  .login1 {
+    width: 70%;
+  }
+  input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+  }
+}
+@media (max-width: 670px) {
+  .container {
+    width: 50px;
+    margin-top: 20vh;
+    padding: 10px;
+  }
+
+  .singup {
+    width: 70%;
+    margin: 200px 60px;
+  }
+  .login1 {
+    width: 70%;
+    margin: 200px 60px;
+  }
+  input {
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+  }
+}
