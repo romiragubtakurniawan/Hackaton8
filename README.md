@@ -1,2 +1,1 @@
-# Hackaton8
-team project
+# HACKATON8

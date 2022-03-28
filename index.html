@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" href="fox--md5--a9e377ae39495073d0e66db163fc8d9b.png">
+    <link rel="stylesheet" href="styleee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-header">
+            <div class="header-left">
+                <button onclick="logo()"><img class="logo" src="fox--md5--a9e377ae39495073d0e66db163fc8d9b.png"></button>
+                
+            </div>
+            <div class="header-right">
+                <button onclick="changepage()">SIGN UP</button>
+                <button onclick="masuk()">LOG IN</button>
+            </div>
+            <div class="out">
+                <button onclick="logout()">LOG OUT</button>
+            </div>
+        </div>
+    </header>
+    <div class="opening">
+        <h1>SELAMAT DATANG DI LIVE MUSIK</h1>
+        <p>SILAKAN SIGN UP UNTUK MEMUTAR MUSIK</p>
+    </div>
+        <div class="container">
+            <h1>MUSIK INDONESIA</h1>
+            <p>SILAKAN PILIH GENRE LAGU KESUKAAN KAMU</p>
+            <div class="btn-wrapper">
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PILIH GENRE LAGU 
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="dangdut" href="#">DANGDUT</a></li>
+                        <li><a class="dropdown-item" id="jawa"  href="#">JAWA</a></li>
+                        <li><a class="dropdown-item" id= "jazz" href="#">JAZZ</a></li>
+                        <li><a class="dropdown-item" id= "pop"  href="#">POP</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="singup">
+            <div class="input-form">
+                <div class="judul">
+                    <h1><b>SIGN UP PAGE</b></h1>
+                </div>
+                <label for="Gmail">
+                    <b>Gmail : </b>
+                </label>
+                <input type="text" id="Gmail" name="Gmail" placeholder="Masukkan Gmail">
+                <label for="username">
+                    <b>Username : </b>
+                </label>
+                <input type="text" id="username" name="username" placeholder="Masukkan username">
+                <label for="Password">
+                    <b>New Password : </b>
+                </label>
+                <input type="password" id="pass" name="Password" placeholder="Masukkan Password">
+    
+                <div class="button">
+                    <button id="submit-button" onclick="login()" type="submit">REGISTER</button>
+                </div>
+                <!-- <P class="kosong">KOK ADA YANG KOSONG?</P> -->
+            </div>
+        </div>
+
+        <div class="login1">
+            <div class="input-form">
+                <div class="judul">
+                    <h1><b>LOGIN PAGE</b></h1>
+                </div>
+                <label for="username">
+                    <b>Username : </b>
+                </label>
+                <input type="text" id="hasilGmail" name="username" placeholder="Masukkan Username">
+                
+                <label for="Password">
+                    <b>Password : </b>
+                </label>
+                <input type="password" id="hasilPass" name="Password" placeholder="Masukkan Password">
+                
+                <div class="button">
+                    <button id="submit-button" onclick="terakhir()" type="submit">CONTINUE</button>
+                </div>
+                <!-- <P class="salah">ADA KESALAHAN SAAT MENGINPUT DATA</P> -->
+            </div>
+        </div>
+        <!-- <footer class="foot1">
+            <div><p>©️ Kelompok 8 2022 </p></div>
+        </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="page1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>
